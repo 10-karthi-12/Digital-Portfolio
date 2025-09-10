@@ -1,0 +1,110 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  background-color: #cfd6e2;
+  color: #076774;
+}
+
+header {
+  background: #a9c6d1;
+  color: rgb(15, 113, 126);
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  color: rgb(12, 119, 78);
+  text-decoration: none;
+}
+
+.hero {
+  text-align: center;
+  padding: 5rem 2rem;
+  background: #d0d9e4;
+  color: rgb(11, 67, 139);
+}
+
+.about,
+.projects,
+.contact {
+  padding: 4rem 2rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.projects .project-list {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.project-card {
+  background: rgb(106, 226, 196);
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(26, 208, 221, 0.1);
+}
+
+.project-card a {
+  display: inline-block;
+  margin-top: 0.5rem;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contact input,
+.contact textarea {
+  padding: 0.75rem;
+  border: 1px solid #0f7f83;
+  border-radius: 5px;
+}
+
+.contact button {
+  padding: 0.75rem;
+  border: none;
+  background: #007bff;
+  color: rgb(11, 136, 130);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: backgroun 0.3s;
+}
+
+.contact button:hover {
+  background: #c9cfd6;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem;
+  background: #08355a;
+  color: rgb(161, 166, 170);
+}
+
